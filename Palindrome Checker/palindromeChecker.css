@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'EB Garamond', serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,black, black,#300091);
+}
+
+.palindrome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    align-items: center;
+}
+
+.check-if-palindrome,
+.input-word {
+    font-size: 1.4em;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin: 15px;
+    color: white;
+    background: black;
+    box-shadow: 0 0 5px #300091,
+                0 0 12px #300091;
+
+}
+
+.dom-text {
+    font-size: 1.2em;
+    color: white;
+    margin: 15px;
+    text-shadow: 0 0 3px #300091,
+                 0 0 9px #300091,
+                 0 0 16px #300091,
+                 0 0 24px #300091;
+}
+
+.wave {
+    position: absolute;
+    aspect-ratio: 960/540;
+    width: 100%;
+    background-repeat: no-repeat;
+    bottom: 0;
+    background-size: cover;
+    z-index: -1;
+}
+
+.check-if-palindrome:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
